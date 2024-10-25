@@ -16,8 +16,8 @@ const {initializeApp} = require("firebase-admin/app");
 const {getFirestore} = require("firebase-admin/firestore");
 const {ResponseKeys ,BenefitStatus, userConverter} = require('./entities')
 const app = initializeApp();
-const db = getFirestore();
-
+const db = getFirestore()
+// process.env.DB
 const toTimestamp = date => Math.floor(date.getTime() / 1000);
 
 const {Success, Message, Data} = ResponseKeys

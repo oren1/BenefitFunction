@@ -1,6 +1,6 @@
 class User {
     userId;
-    d;
+    benefitExpirationDate;
   
     constructor(userId, benefitExpirationDate) {
      this.userId = userId
@@ -9,7 +9,7 @@ class User {
     toString() {
       return `User ${this.userId} has benefit expiration date ${this.benefitExpirationDate}`;
     }
-  }
+}
   
   // Firestore data converter
 exports.userConverter = {
